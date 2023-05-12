@@ -1,0 +1,23 @@
+version: "3.9"
+networks:
+  toolbox-net:
+    name: toolbox-net
+    driver: bridge
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./repos/backend
+      dockerfile: ./Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./repos/backend:/backend
+    entrypoint: ["npm", "run", "start"]
+  frontend:
+    container_name: frontend
+    build:
+      context: ./repos/frontend
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
