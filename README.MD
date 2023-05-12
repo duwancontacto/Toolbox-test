@@ -1,8 +1,9 @@
 # Prerequisites
 
-- node >= 14
+- node = 14 to Backend
+- node = 16 to Frontend
 
-### Setup Docker
+## Setup Docker
 
 If you want to run all with docker:
 
@@ -11,8 +12,8 @@ If you want to run all with docker:
 
 This will rase:
 
--Backend in port 3001
--Frontend in port 3000
+- Backend in port 3001
+- Frontend in port 3000
 
 ## Setud and run only Backend
 
@@ -28,7 +29,7 @@ also you can run
 - run `npm run standard` to run automatic standardJs and
   if you have problems in the code in the result of `npm run standard` so you can run `npm run fix` to fix all isuess with standard fix
 
-or you can run:
+and you can run:
 
 - run `npm run test` to run the API test
 
